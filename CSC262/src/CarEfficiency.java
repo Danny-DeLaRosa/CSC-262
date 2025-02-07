@@ -1,7 +1,3 @@
-/**
- * Fuel Efficiency Calculator.
- **/
-
 import java.util.Scanner; // must be imported for user input
 public class CarEfficiency {
 
@@ -33,7 +29,8 @@ public class CarEfficiency {
 		gallons -= gasConsumed;
 		double costToFill = (tankCapacity - gallons) * pricePerGallon;
 		System.out.printf("The cost to fill your tank is: $%.2f%n", costToFill);
-		
+
+
 	}
 
 }
