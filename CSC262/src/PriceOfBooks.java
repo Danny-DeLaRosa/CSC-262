@@ -20,7 +20,7 @@ public class PriceOfBooks {
 		
 		// Price breakdown of order
 		System.out.println("Your total for " + books + " books is: ");
-		System.out.printf("Total before tax and shipping: $%.2f%n" , totalBeforeTaxShipping , "Hi");
+		System.out.printf("Total before tax and shipping: $%.2f%n" , totalBeforeTaxShipping);
 		System.out.printf("+ Taxes: $ %.2f%n" ,totalTax);
 		System.out.printf("+ Shipping: $%.2f%n" ,totalShipping);
 		System.out.printf("Total after tax and shipping: $%.2f%n" ,totalAfterTaxShipping);
