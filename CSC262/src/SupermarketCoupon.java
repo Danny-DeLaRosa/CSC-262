@@ -5,9 +5,10 @@ public class SupermarketCoupon {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 	
-		// use a loop
+		// User input
 		System.out.print("Please enter price of groceries: $");
 		double price = in.nextDouble();
+		
 		// conditional statements for coupon price
 			if (price >= 210)
 			{
