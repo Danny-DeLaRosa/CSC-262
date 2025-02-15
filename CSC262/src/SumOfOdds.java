@@ -18,7 +18,7 @@ public class SumOfOdds {
 			input = input / 10;
 			
 		}
-		System.out.println(sumOfOdds);
+		System.out.println("Sum of odd number: " + sumOfOdds);
 	}
 
 }
