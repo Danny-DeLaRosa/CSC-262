@@ -18,8 +18,9 @@ public class MaxMinAvg {
 		
 		System.out.println(numberList);
 		System.out.println("You entered " + count(numberList) + " numbers");
-		System.out.printf("the average of numbers is %.2f%n" , average(numberList));
-		
+		System.out.printf("The average of numbers is %.2f%n" , average(numberList));
+		System.out.printf("The smallest number is %.2f%n" , minimum(numberList));
+		System.out.printf("The largest number is %.2f%n" , maximum(numberList));		
 
 	}
 	public static int count(ArrayList<Double> a) {
@@ -34,7 +35,24 @@ public class MaxMinAvg {
 		for(double e:a) {
 			sum += e;
 		}
-		
 		return sum /count(a);
+	}
+	public static double minimum(ArrayList<Double> a) {
+		double minValue = a.get(0);
+		for(int i = 0; i < a.size(); i++) {
+			if(a.get(i) < minValue ) {
+				minValue = a.get(i);
+			}
+		}
+		return minValue;
+	}
+	public static double maximum(ArrayList<Double> a) {
+		double maxValue = 0;
+		for(double e:a) {
+			if(e > maxValue) {
+				maxValue = e;
+			}
+		}
+		return maxValue;
 	}
 }
