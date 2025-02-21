@@ -21,7 +21,8 @@ public class MaxMinAvg {
 		System.out.printf("The average of numbers is %.2f%n" , average(numberList));
 		System.out.printf("The smallest number is %.2f%n" , minimum(numberList));
 		System.out.printf("The largest number is %.2f%n" , maximum(numberList));		
-
+		System.out.print("The range of the numbers is "); range(numberList);
+		
 	}
 	public static int count(ArrayList<Double> a) {
 		int count = 0;
@@ -55,4 +56,9 @@ public class MaxMinAvg {
 		}
 		return maxValue;
 	}
+	public static void range(ArrayList<Double> a) {
+		double range = maximum(a) - minimum(a);
+		System.out.printf("%.2f%n", range);
+	}
+	
 }
