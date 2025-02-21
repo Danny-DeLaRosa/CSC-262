@@ -17,7 +17,8 @@ public class MaxMinAvg {
 		}while(number > 0);
 		
 		System.out.println(numberList);
-		System.out.println(count(numberList));
+		System.out.println("You entered " + count(numberList) + " numbers");
+		System.out.printf("the average of numbers is %.2f%n" , average(numberList));
 		
 
 	}
@@ -26,8 +27,14 @@ public class MaxMinAvg {
 		for(double e : a) {
 			count++;
 		}
-		
 		return count;
 	}
-
+	public static double average(ArrayList<Double> a) {
+		double sum = 0;
+		for(double e:a) {
+			sum += e;
+		}
+		
+		return sum /count(a);
+	}
 }
