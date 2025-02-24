@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 import java.util.Scanner;
 import java.util.ArrayList;
+=======
+>>>>>>> bcfbc37bf0aefadd476ebebcf4faffe44639cfea
 
 public class Swapping {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		 Scanner in = new Scanner(System.in);
 	        System.out.print("Enter a word: ");
 	        String word = in.nextLine();
@@ -39,3 +43,19 @@ public class Swapping {
 		
 	}
 	}
+=======
+		// read a word
+		String word = "Programming";
+		double rand = Math.random() * (word.length() - 2);
+		rand = Math.ceil(rand);
+		System.out.println(rand);
+
+	}
+	public static String swapLetter(String a) {
+		System.out.println(a);
+		int rand = (int)Math.ceil(Math.random()) * a.length() - 1;
+		return a;
+	}
+
+}
+>>>>>>> bcfbc37bf0aefadd476ebebcf4faffe44639cfea
