@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 import java.util.Scanner;
 import java.util.ArrayList;
-=======
->>>>>>> bcfbc37bf0aefadd476ebebcf4faffe44639cfea
 
 public class Swapping {
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
 		 Scanner in = new Scanner(System.in);
 	        System.out.print("Enter a word: ");
 	        String word = in.nextLine();
@@ -43,7 +39,6 @@ public class Swapping {
 		
 	}
 	}
-=======
 		// read a word
 		String word = "Programming";
 		double rand = Math.random() * (word.length() - 2);
@@ -58,4 +53,3 @@ public class Swapping {
 	}
 
 }
->>>>>>> bcfbc37bf0aefadd476ebebcf4faffe44639cfea
