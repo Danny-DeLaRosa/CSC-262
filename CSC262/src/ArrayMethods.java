@@ -2,19 +2,21 @@
 public class ArrayMethods {
 
 	public static void main(String[] args) {
-		int[] values = {1, 82, 94, 4, 36, 7, 55};
+		int[] values = {1, 55, 82, 94, 4, 36, 7, 55};
 		System.out.println("Original array:");
-		printArray(values);
+		print_array(values);
 		swap(values);
 		System.out.println("Swapped array:");
-		printArray(values);
+		print_array(values);
 		System.out.println("Removed middle value:");		
-		printArray(removeMiddle(values));
+		print_array(remove_middle(values));
+		System.out.println("Array has adjacent duplicate: " + adjacent_duplicate(values));		
+		
 	}
 	
-	 public static void printArray(int[] a) {
-	        for (int num : a) {
-	            System.out.print(num + " ");
+	 public static void print_array(int[] a) {
+	        for (int e : a) {
+	            System.out.print(e + " ");
 	        }
 	        System.out.println();
 	    }
@@ -26,7 +28,7 @@ public class ArrayMethods {
 		a[a.length - 1] = first;
 	}
 	
-	public static int[] removeMiddle(int[] a) {
+	public static int[] remove_middle(int[] a) {
 	    if (a.length == 0) {
 	        return a; 
 	    }
@@ -50,5 +52,12 @@ public class ArrayMethods {
 	    return newArray;
 	}
 	
+	public static boolean adjacent_duplicate(int[] a) {
+		for(int i = 0; i < a.length - 1; i++) {
+			if(a[i] == a[i + 1]) 
+				return true;
+		}
+		return false;
+	}
 
 }
