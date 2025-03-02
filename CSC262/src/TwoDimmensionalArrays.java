@@ -18,9 +18,9 @@ public class TwoDimmensionalArrays {
 	 }
 	
 	public static void swapRows(int[][] array, int row1, int row2) {
-        int[] temp = array[row1]; // Store row1 temporarily
-        array[row1] = array[row2]; // Assign row2 to row1
-        array[row2] = temp; // Assign temp (original row1) to row2
+        int[] temp = array[row1]; 
+        array[row1] = array[row2];
+        array[row2] = temp; 
     }
 	
 	 public static void printMatrix(int[][] array) {
